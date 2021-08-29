@@ -367,7 +367,7 @@ input[type=number] {
 
 @media (max-width: 1185px) {
     .data-price {
-        width: 71%;
+        width: 65%;
         flex-wrap: wrap;
         margin: 12px auto 0
     }
@@ -442,7 +442,7 @@ input[type=number] {
     }
 
     .data-price {
-        width: 68%;
+        width: 65%;
     }
 
     .wrapper-places {
@@ -525,7 +525,7 @@ input[type=number] {
     }
 
     .data-price {
-        width: 82%;
+        width: 97%;
     }
 
     .count {
