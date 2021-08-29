@@ -1,0 +1,610 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+body {
+    background-image: url('https://u-stena.ru/upload/iblock/fba/fbac4acbb14f7bb132faae46b8baaf4a.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.wrap-app {
+    width: 60%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: rgb(253, 250, 255);
+    background: linear-gradient(90deg, rgba(253, 250, 255, 1) 0%, rgba(255, 248, 248, 1) 15%, rgba(255, 252, 248, 1) 40%, rgba(255, 252, 248, 1) 74%, rgba(255, 249, 241, 1) 96%);
+}
+
+h1 {
+    padding: 20px 0 5px;
+}
+
+hr {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+    color: rgb(56, 56, 56);
+}
+
+.data-price {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.data-price div {
+    display: flex;
+    align-items: center;
+    margin-right: 7px;
+}
+
+.wrapper-places {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.wrapper-row {
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-around;
+}
+
+.place {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(112, 42, 42, 0.5);
+}
+
+.place_info {
+    width: 25px;
+    height: 25px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(112, 42, 42, 0.5);
+}
+
+.place_row-1 {
+    border: 3px solid rgb(225, 240, 13);
+}
+
+.place_row-2 {
+    border: 3px solid rgb(10, 91, 212);
+}
+
+.place_row-3 {
+    border: 3px solid rgb(151, 101, 8);
+}
+
+.place_row-4 {
+    border: 3px solid rgb(3, 143, 131);
+}
+
+.row_1 {
+    width: 40%;
+}
+
+.row_2 {
+    width: 62%;
+}
+
+.row_3 {
+    width: 85%;
+}
+
+.group-places {
+    display: flex;
+}
+
+.group-places .place {
+    margin: 2px;
+}
+
+.row_2 :last-child {
+    margin-right: 0
+}
+
+.wrap-action {
+    width: 60%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectedPlace {
+    background-color: rgb(255, 155, 116);
+}
+
+.buy {
+    background-color: rgb(3, 1, 1);
+    opacity: 0.4;
+}
+
+.wrap-screen {
+    width: 30%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen {
+    background-color: rgb(209, 209, 209);
+    border-radius: 50px;
+    width: 100%;
+    height: 7px;
+    margin: 0 10px;
+    box-shadow: 0 0 5px rgba(100, 100, 100, 0.5);
+}
+
+.modal-overlay,
+.modal-succeed {
+    overflow-y: auto;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-window {
+    padding: 15px;
+    width: 600px;
+    border-radius: 7px;
+    background: rgb(253, 250, 255);
+    background: linear-gradient(90deg, rgba(253, 250, 255, 1) 0%, rgba(255, 245, 245, 1) 50%, rgba(255, 252, 248, 1) 100%);
+    margin: 100px auto;
+    box-shadow: 0px 0px 94px -7px rgba(34, 60, 80, 0.39);
+}
+
+.modal-window h2 {
+    font-size: 30px;
+}
+
+.modal-window h3 span {
+    text-decoration: underline;
+}
+
+.logoMC {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    background-image: url('https://www.pngarts.com/files/1/Visa-Logo-PNG-Transparent-Image.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50px;
+    height: 17px;
+}
+
+.modal-body {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wrap-card {
+    position: relative;
+    margin-right: 15px;
+    width: 230px;
+    height: 155px;
+    padding: 13px;
+    border-radius: 12px;
+    background: rgb(135, 135, 136);
+    background: linear-gradient(90deg, rgba(135, 135, 136, 1) 0%, rgba(103, 103, 103, 1) 23%, rgba(80, 80, 80, 1) 48%, rgba(111, 111, 111, 1) 64%, rgba(77, 82, 93, 1) 85%, rgba(102, 102, 102, 1) 100%);
+    box-shadow: 0 0 10px rgba(34, 34, 34, 0.5);
+}
+
+.wrap-card span {
+    font-size: 12px;
+    color: rgb(226, 226, 226);
+}
+
+.card-inp-numberCard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-inp-numberCard input {
+    width: 45px;
+    margin: 3px 0 13px;
+    text-align: center;
+}
+
+/*  */
+.style-input {
+    font-weight: bold;
+    height: 22px;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+/*  */
+.card-inp-dateCard {
+    margin: 0 0 5px 33px;
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-inp-dateCard input {
+    width: 30px;
+}
+
+input:focus {
+    border: 2px yellow solid;
+}
+
+.inp-ownerCard {
+    text-transform: uppercase;
+    width: 202px;
+    margin-top: 14px;
+    text-align: left;
+    padding: 5px;
+}
+
+.ticket {
+    width: 40%;
+    margin: 7px;
+    padding: 7px;
+    border: 1px solid rgb(179, 179, 179);
+    box-shadow: 0 0 3px rgba(34, 34, 34, 0.5);
+    border-radius: 8px;
+    background: rgb(241, 241, 241);
+    background: radial-gradient(circle, rgba(241, 241, 241, 1) 0%, rgba(255, 247, 252, 1) 30%, rgba(252, 252, 252, 1) 54%, rgba(249, 249, 249, 1) 74%, rgba(227, 238, 251, 1) 100%);
+}
+
+.ticket h3 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.ticket p {
+    line-height: 20px;
+}
+
+.wrap-tickets {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+button {
+    width: 100px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: honeydew;
+    font-size: 17px;
+    padding: 3px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 10px rgba(34, 34, 34, 0.5);
+}
+
+#btn-buy,
+#bnt-addOrder,
+#btn-close {
+    background-color: rgb(126, 158, 77);
+}
+
+#btn-buy:hover,
+#bnt-addOrder:hover,
+#btn-close:hover {
+    background-color: rgb(113, 172, 24);
+}
+
+#btn-cancel {
+    background-color: rgb(255, 122, 89);
+}
+
+#btn-cancel:hover {
+    background-color: rgb(255, 100, 52);
+}
+
+.btns-buy-cancel {
+    width: 36%;
+    margin: 20px auto;
+}
+
+#bnt-addOrder {
+    width: 110px;
+    transition: 0.5s;
+    line-height: 1.4;
+}
+
+#bnt-addOrder:disabled {
+    background-color: rgb(163, 163, 163);
+}
+
+.succeed {
+    background-image: url(https://static.tildacdn.com/tild6261-3462-4565-b566-366332323264/__.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 28px auto;
+    width: 20%;
+    height: 125px;
+}
+
+#btn-close {
+    display: block;
+    width: 20%;
+    margin: 10px auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+@media (max-width: 1300px) {
+    .data-price {
+        width: 97%;
+    }
+}
+
+@media (max-width: 1185px) {
+    .data-price {
+        width: 71%;
+        flex-wrap: wrap;
+        margin: 12px auto 0
+    }
+
+    .data-price div {
+        margin: 0 7px 10px 0;
+    }
+
+    .wrapper-places {
+        width: 80%;
+    }
+
+    .wrap-action {
+        width: 70%;
+    }
+
+    .wrap-screen {
+        width: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    .place {
+        width: 20px;
+        height: 20px;
+    }
+
+    .wrapper-row {
+        margin: 15px auto;
+    }
+
+    button {
+        font-size: 13px;
+    }
+
+    #bnt-addOrder {
+        width: 83px;
+        height: 50px;
+    }
+
+    .count {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 835px) {
+    .data-price {
+        width: 90%;
+    }
+
+    .wrapper-places {
+        width: 95%;
+    }
+
+    .modal-window {
+        width: 571px;
+    }
+
+    .btns-buy-cancel {
+        width: 38%;
+    }
+
+}
+
+@media (max-width: 720px) {
+    body {
+        background: none;
+    }
+
+    .wrap-app {
+        width: 100%;
+    }
+
+    .data-price {
+        width: 68%;
+    }
+
+    .wrapper-places {
+        width: 70%;
+    }
+
+    .ticket {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 570px) {
+    .wrapper-places {
+        width: 90%;
+    }
+
+    .modal-window {
+        width: 400px;
+    }
+
+    .modal-body {
+        display: block;
+    }
+
+    .wrap-tickets {
+        width: 100%;
+    }
+
+    .ticket {
+        width: 29%;
+    }
+
+    .wrap-card {
+        margin: 20px auto;
+    }
+
+    .btns-buy-cancel {
+        width: 56%;
+    }
+
+    .succeed {
+        margin: 25px auto;
+        height: 73px;
+    }
+
+    #btn-close {
+        display: block;
+        width: 28%;
+    }
+}
+
+@media (max-width: 505px) {
+    .wrapper-places {
+        width: 90%;
+    }
+
+    .data-price {
+        width: 84%;
+    }
+
+    .modal-window {
+        width: 353px;
+    }
+
+    .ticket {
+        width: 29%;
+        font-size: 13px;
+    }
+
+    .btns-buy-cancel {
+        width: 64%;
+    }
+}
+
+@media (max-width: 405px) {
+    .place {
+        width: 17px;
+        height: 17px;
+    }
+
+    .data-price {
+        width: 82%;
+    }
+
+    .count {
+        font-size: 14px;
+    }
+
+    #bnt-addOrder {
+        width: 78px;
+        height: 38px;
+        font-size: 11px;
+    }
+}
+
+.spinner {
+    visibility: hidden;
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    perspective: 800px;
+}
+
+.inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 7px solid #a6f1c8;
+}
+
+.inner.two {
+    right: 0%;
+    top: 0%;
+    animation: rotate-two 1s linear infinite;
+    border-right: 7px solid #46a009;
+}
+
+.inner.three {
+    right: 0%;
+    bottom: 0%;
+    animation: rotate-three 1s linear infinite;
+    border-top: 7px solid #44610f;
+}
+
+@keyframes rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-two {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-three {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}

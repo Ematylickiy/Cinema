@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap-app">
+        <header>
+            <h1 class="text-center">Кинотеатр</h1>
+            <h4 class="text-center">Мстители: Война бесконечности</h4>
+            <div class="session-date text-center"></div>
+        </header>
+        <main>
+            <div class="data-price">
+                <div>
+                    <div class="place_info place_row-1"> </div>
+                    <span>Ряд 1 (6р. 00к.) </span>
+                    </div>
+                <div>
+                    <div class="place_info place_row-2"> </div>
+                    <span>Ряд 2 (7р. 00к.) </span>
+                </div>
+                <div>
+                    <div class="place_info place_row-3"> </div>
+                    <span>Ряд 3 (8р. 00к.) </span>
+                </div>
+                <div>
+                    <div class="place_info place_row-4"> </div>
+                    <span>Ряд 4 (9р. 00к.) </span>
+                </div>
+            </div>
+            <div class="data-price">
+                <div>
+                    <div class="place_info selectedPlace"> </div>
+                    <span>Место выбрано</span>
+                </div>
+                <div>
+                    <div class="place_info buy"> </div>
+                    <span>Место занято</span>
+                </div>
+            </div>
+<hr>
+            <div class="wrapper-places">
+                <section class="wrapper-row row_4" data-wrap="not-event">
+                    <div class="group-places" data-wrap="not-event">
+                        <div class="place place_row-4" id = 'r_4-pl_1' data-row="4" data-seat="1" title="Место 1"></div>
+                        <div class="place place_row-4" id = 'r_4-pl_2' data-row="4" data-seat="2" title="Место 2"></div>
+                    </div>
+                    <div class="group-places" data-wrap="not-event">
+                        <div class="place place_row-4" id = 'r_4-pl_3' data-row="4" data-seat="3" title="Место 3"></div>
+                        <div class="place place_row-4" id = 'r_4-pl_4' data-row="4" data-seat="4" title="Место 4"></div>
+                        <div class="place place_row-4" id = 'r_4-pl_5' data-row="4" data-seat="5" title="Место 5"></div>
+                    </div>
+                    <div class="group-places" data-wrap="not-event">
+                        <div class="place place_row-4" id = 'r_4-pl_6' data-row="4" data-seat="6" title="Место 6"></div>
+                        <div class="place place_row-4" id = 'r_4-pl_7' data-row="4" data-seat="7" title="Место 7"></div>
+                        <div class="place place_row-4" id = 'r_4-pl_8' data-row="4" data-seat="8" title="Место 8"></div>
+                    </div>
+                    <div class="group-places" data-wrap="not-event">
+                        <div class="place place_row-4" id = 'r_4-pl_9' data-row="4" data-seat="9" title="Место 9"></div>
+                        <div class="place place_row-4" id = 'r_4-pl_10' data-row="4" data-seat="10" title="Место 10"></div>
+                        <div class="place place_row-4" id = 'r_4-pl_11' data-row="4" data-seat="11" title="Место 11"></div>
+                    </div>
+                    <div class="group-places" data-wrap="not-event">
+                        <div class="place place_row-4" id = 'r_4-pl_12' data-row="4" data-seat="12" title="Место 12"></div>
+                        <div class="place place_row-4" id = 'r_4-pl_13' data-row="4" data-seat="13" title="Место 13"></div>
+                    </div>               
+                </section>
+
+                <section class="wrapper-row row_3" data-wrap="not-event">
+                    <div class="group-places" data-wrap="not-event">
+                        <div class="place place_row-3" id = 'r_3-pl_1' data-row="3" data-seat="1" title="Место 1"></div>
+                        <div class="place place_row-3" id = 'r_3-pl_2' data-row="3" data-seat="2" title="Место 2"></div>
+                        <div class="place place_row-3" id = 'r_3-pl_3' data-row="3" data-seat="3" title="Место 3"></div>
+                    </div>
+                    <div class="group-places" data-wrap="not-event">
+                        <div class="place place_row-3" id = 'r_3-pl_4' data-row="3" data-seat="4" title="Место 4"></div>
+                        <div class="place place_row-3" id = 'r_3-pl_5' data-row="3" data-seat="5" title="Место 5"></div>
+                        <div class="place place_row-3" id = 'r_3-pl_6' data-row="3" data-seat="6" title="Место 6"></div>
+                    </div>
+                    <div class="group-places" data-wrap="not-event">
+                        <div class="place place_row-3" id = 'r_3-pl_7' data-row="3" data-seat="7" title="Место 7"></div>
+                        <div class="place place_row-3" id = 'r_3-pl_8' data-row="3" data-seat="8" title="Место 8"></div>
+                        <div class="place place_row-3" id = 'r_3-pl_9' data-row="3" data-seat="9" title="Место 9"></div>
+                    </div>
+                    <div class="group-places" data-wrap="not-event">
+                        <div class="place place_row-3" id = 'r_3-pl_10' data-row="3" data-seat="10" title="Место 10"></div>
+                        <div class="place place_row-3" id = 'r_3-pl_11' data-row="3" data-seat="11" title="Место 11"></div>
+                        <div class="place place_row-3" id = 'r_3-pl_12' data-row="3" data-seat="12" title="Место 12"></div>
+                    </div>
+                </section>
+
+                <section class="wrapper-row row_2" data-wrap="not-event" data-row="2">
+                    <div class="group-places" data-wrap="not-event">
+                        <div class="place place_row-2" id = 'r_2-pl_1' data-row="2" data-seat="1" title="Место 1"></div>
+                        <div class="place place_row-2" id = 'r_2-pl_2' data-row="2" data-seat="2" title="Место 2"></div>
+                    </div>
+                    <div class="group-places" data-wrap="not-event" >
+                        <div class="place place_row-2" id = 'r_2-pl_3' data-row="2" data-seat="3" title="Место 3"></div>
+                        <div class="place place_row-2" id = 'r_2-pl_4' data-row="2" data-seat="4" title="Место 4"></div>
+                    </div>
+                    <div class="group-places" data-wrap="not-event">
+                        <div class="place place_row-2" id = 'r_2-pl_5' data-row="2" data-seat="5" title="Место 5"></div>
+                        <div class="place place_row-2" id = 'r_2-pl_6' data-row="2" data-seat="6" title="Место 6"></div>
+                    </div>
+                    <div class="group-places" data-wrap="not-event">
+                        <div class="place place_row-2" id = 'r_2-pl_7' data-row="2" data-seat="7" title="Место 7"></div>
+                        <div class="place place_row-2" id = 'r_2-pl_8' data-row="2" data-seat="8" title="Место 8"></div>
+                    </div>
+                </section>
+
+                <section class="wrapper-row row_1" data-wrap="not-event" data-row="1">
+                    <div id = 'r_1-pl_1' class="place place_row-1" data-row="1" data-seat="1" title="Место 1"></div>
+                    <div id = 'r_1-pl_2' class="place place_row-1" data-row="1" data-seat="2" title="Место 2"></div>
+                    <div id = 'r_1-pl_3' class="place place_row-1" data-row="1" data-seat="3" title="Место 3"></div>
+                    <div id = 'r_1-pl_4' class="place place_row-1" data-row="1" data-seat="4" title="Место 4"></div>
+                    <div id = 'r_1-pl_5' class="place place_row-1" data-row="1" data-seat="5" title="Место 5"></div>
+                    <div id = 'r_1-pl_6' class="place place_row-1" data-row="1" data-seat="6" title="Место 6"></div>
+                </section>
+            </div>
+
+            <div class="wrap-screen">
+                <span>экран</span><div class="screen"></div><span>экран</span>
+            </div>
+<hr>
+            <div class="wrap-action">
+                <div>
+                    <h2 class="count">Счёт к оплате: <span id="price">0р. 00коп.</span></h2>
+                    <h2 class="count">Всего билетов: <span class="countSeats">0</span> шт.</h2>
+                </div>
+                <button id="bnt-addOrder" disabled >Оформить заказ</button>
+            </div>
+
+            <div class="modal-overlay">
+                <div class="modal-window">
+                    <h2 class="text-center">Оплата</h2>
+                    <div class="count-tickets"></div>
+                    <div class="modal-body">
+                        <div class="wrap-tickets"></div>
+                        <div class="wrap-card">
+                            <span>номер карты:</span>
+                            <div class="logoMC"></div>
+                            <form class="card-inp-numberCard">
+                                <input class = 'inp-number-card style-input' type = 'number' placeholder="XXXX"></input>
+                                <input class = 'inp-number-card style-input' type = 'number' placeholder="XXXX"></input>
+                                <input class = 'inp-number-card style-input' type = 'number' placeholder="XXXX"></input>
+                                <input class = 'inp-number-card style-input' type = 'number' placeholder="XXXX"></input>
+                            </form>
+                            <div class="spinner">
+                                <div class="inner one"></div>
+                                <div class="inner two"></div>
+                                <div class="inner three"></div>
+                              </div>
+                            <div class="card-inp-dateCard">
+                                <span>срок действия:</span>
+                                <div>
+                                    <input class = 'inp-date-card style-input' type = 'number' placeholder="XX"></input> <span>/</span>
+                                    <input class = 'inp-date-card style-input' type = 'number' placeholder="XX"></input>
+                                </div>
+                            </div>
+                            <input class="inp-ownerCard style-input" type = 'text' placeholder="ФИО владельца карты"></input>
+                        </div>
+                    </div>
+                    <div class="btns-buy-cancel">
+                        <button id = 'btn-buy'>Купить</button>
+                        <button id = "btn-cancel">Отмена</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-succeed">
+                <div class="modal-window">
+                    <h2 class="text-center">Оплата прошла успешно! Спасибо!</h2>
+                    <div class = 'succeed'></div>
+                    <button id = "btn-close">Закрыть</button>
+                </div>
+            </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
